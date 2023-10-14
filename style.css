@@ -1,0 +1,227 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+.parent {
+    width: 90%;
+    max-width: 1024px;
+    height: 1000px;
+
+
+    margin: 100px auto;
+}
+
+.parentnaranja {
+    width: 100%;
+    height: 25%;
+    margin-bottom: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.naranjita1 {
+    background-color: orange;
+    border: 1px solid black;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.naranjita2 {
+    background-color: orange;
+    border: 1px solid black;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.parentverde {
+    width: 100%;
+    height: 25%;
+    margin-bottom: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.verde1 {
+    background-color: green;
+    border: 1px solid black;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.parentazul {
+    width: 100%;
+    height: 25%;
+    margin-bottom: 20px;
+
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.azul1 {
+    background-color: rgb(24, 130, 243);
+    border: 1px solid black;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.azul2 {
+    background-color: rgb(24, 130, 243);
+    border: 1px solid black;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.azul3 {
+    background-color: rgb(24, 130, 243);
+    border: 1px solid black;
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.parentgris {
+    width: 100%;
+    height: 25%;
+    margin-bottom: 20px;
+
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.gris1 {
+    background-color: gray;
+    border: 1px solid black;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.gris2 {
+    background-color: gray;
+    border: 1px solid black;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.gris3 {
+    background-color: gray;
+    border: 1px solid black;
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.gris4 {
+    background-color: gray;
+    border: 1px solid black;
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+@media (max-width:720px) {
+    .parentnaranja {
+        width: 100%;
+        height: 20%;
+        margin-bottom: 20px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+    .naranjita1 {
+
+        border: 1px solid black;
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .naranjita2 {
+
+        border: 1px solid black;
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .parentverde {
+        width: 100%;
+        height: 15%;
+        margin-bottom: 20px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+
+    .verde1 {
+
+        border: 1px solid black;
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .parentazul {
+        width: 100%;
+        height: 75%;
+        margin-bottom: 20px;
+
+
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+
+    .azul1 {
+
+        border: 1px solid black;
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .azul2 {
+
+        border: 1px solid black;
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .azul3 {
+
+        border: 1px solid black;
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    .parentgris {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        }
+        
+        .gris1 { grid-area: 1 / 1 / 2 / 2; }
+        .gris2 { grid-area: 1 / 2 / 2 / 3; }
+        .gris3 { grid-area: 2 / 1 / 3 / 2; }
+        .gris4 { grid-area: 2 / 2 / 3 / 3; }
+}
+.cajita{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    margin: 20px auto;
+    animation: cajita 2s infinite;
+}
+@keyframes cajita {
+   20% {transform: translate(200px,0px);}
+   40% {transform: translate(200px,200px);}
+   60% {transform: translate(0px,200px);}
+
+   
+}
